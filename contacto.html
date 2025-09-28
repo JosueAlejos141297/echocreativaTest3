@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EchoCreativa - Contacto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="C:\Users\Josue\Documents\EchoPage3\icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body { font-family: 'Lato', sans-serif; }
+    .font-poppins { font-family: 'Poppins', sans-serif; }
+    .color-17afa1 { color: #17AFA1; }
+    .color-431a60 { color: #431A60; }
+    .color-796489 { color: #796489; }
+    .color-de1a80 { color: #DE1A80; }
+    .color-cccacd { color: #CCCACD; }
+    .bg-17afa1 { background-color: #17AFA1; }
+    .bg-431a60 { background-color: #431A60; }
+    .bg-796489 { background-color: #796489; }
+    .bg-de1a80 { background-color: #DE1A80; }
+    .bg-cccacd { background-color: #CCCACD; }
+    
+    /* Animación del menú */
+    .nav-link-hover {
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .nav-link-hover:hover {
+        transform: translateY(-2px);
+        color: #DE1A80;
+    }
+
+    /* Animación para las tarjetas de contacto */
+    .contact-card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-card-hover:hover {
+        transform: translateY(-5px); /* Efecto de elevación */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Sombra más prominente */
+    }
+
+    /* Estilo del foco para los inputs */
+    .focus\:ring-431a60:focus {
+        --tw-ring-color: #431A60;
+    }
+    
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <nav class="bg-431a60 text-white px-6 py-4 flex justify-between items-center relative">
+   <a href="index.html" class="flex items-center">
+      <img src="C:\Users\Josue\Documents\EchoPage3\logox.png" alt="Echo Creativa Logo" class="h-9">
+    </a>
+    <button id="menu-btn" class="lg:hidden block focus:outline-none text-2xl">☰</button>
+    <ul id="menu" class="hidden lg:flex space-x-6 font-semibold">
+      <li><a href="index.html" class="nav-link-hover">Inicio</a></li>
+      <li><a href="quienes.html" class="nav-link-hover">Quiénes Somos</a></li>
+      <li><a href="servicios.html" class="nav-link-hover">Servicios</a></li>
+      <li><a href="diferenciales.html" class="nav-link-hover">Diferenciales</a></li>
+      <li><a href="contacto.html" class="nav-link-hover">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="p-8 md:p-16 max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl font-poppins font-bold color-431a60 mb-8">Contáctanos</h2>
+    <hr class="border-t-2 border-pink-500 w-20 mx-auto mb-6">
+    <p class="text-lg leading-relaxed mb-12">
+      ¿Listo para impulsar tu negocio? <br> Nos encantaría escuchar sobre tu proyecto y ayudarte a encontrar la mejor solución para tus metas. <br >Ponte en contacto con nosotros y hagamos que tu marca resuene.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <a href="https://www.echocreativa.com.mx" target="_blank" class="bg-white p-6 rounded-lg shadow-lg contact-card-hover flex flex-col items-center">
+        <i class="fas fa-globe color-17afa1 text-4xl mb-2"></i>
+        <p class="font-semibold text-lg">www.echocreativa.com.mx</p>
+      </a>
+      <a href="mailto:echocreativa@gmail.com" class="bg-white p-6 rounded-lg shadow-lg contact-card-hover flex flex-col items-center">
+        <i class="fas fa-envelope color-17afa1 text-4xl mb-2"></i>
+        <p class="font-semibold text-lg">echocreativa@gmail.com</p>
+      </a>
+      <a href="https://wa.me/525525017370" target="_blank" class="bg-white p-6 rounded-lg shadow-lg contact-card-hover flex flex-col items-center">
+        <i class="fab fa-whatsapp color-17afa1 text-4xl mb-2"></i>
+        <p class="font-semibold text-lg">WhatsApp</p>
+        <p class="font-semibold text-lg">55 2501 7370</p>
+      </a>
+      <a href="https://www.facebook.com/echocreativa" target="_blank" class="bg-white p-6 rounded-lg shadow-lg contact-card-hover flex flex-col items-center">
+        <i class="fab fa-facebook color-17afa1 text-4xl mb-2"></i>
+        <p class="font-semibold text-lg">Facebook</p>
+	<p class="font-semibold text-sm color-black">@echocreativa</p>
+      </a>
+    </div>
+
+    <div class="flex justify-center mt-8">
+      <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-lg text-left">
+        <h3 class="text-xl font-poppins font-bold text-center color-431a60 mb-6">Envíanos un mensaje</h3>
+        
+        <form id="contact-form" action="#" method="POST">
+          <div class="mb-4">
+            <input type="text" id="name" name="name" placeholder="Tu Nombre" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-431a60">
+          </div>
+          <div class="mb-4">
+            <input type="email" id="email" name="email" placeholder="Tu Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-431a60">
+          </div>
+          <div class="mb-6">
+            <textarea id="message" name="message" rows="5" placeholder="Tu Mensaje" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-431a60 resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-de1a80 text-white font-semibold py-3 rounded-lg hover:bg-431a60 transition">
+            Enviar
+          </button>
+        </form>
+        <p id="form-status" class="mt-4 text-center hidden"></p>
+      </div>
+    </div>
+    <p class="mt-8 text-xl md:text-2xl font-poppins color-431a60 font-bold"><i>"Un eco creativo que transforma"</i></p>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      menu.classList.toggle("flex");
+      menu.classList.toggle("flex-col");
+      menu.classList.toggle("absolute");
+      menu.classList.toggle("bg-431a60");
+      menu.classList.toggle("top-16");
+      menu.classList.toggle("left-0");
+      menu.classList.toggle("w-full");
+      menu.classList.toggle("space-y-4");
+      menu.classList.toggle("p-6");
+    });
+    
+    // Validación del formulario
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const status = document.getElementById('form-status');
+      status.classList.add('hidden');
+      status.style.color = 'red';
+
+      if (!name || !email || !message) {
+        event.preventDefault();
+        status.textContent = 'Por favor, completa todos los campos.';
+        status.classList.remove('hidden');
+      } else {
+        // En un entorno real, aquí se enviaría el formulario a un servidor.
+        // Para esta demostración, solo mostramos un mensaje de éxito.
+        event.preventDefault();
+        status.textContent = '¡Mensaje enviado con éxito!';
+        status.style.color = 'green';
+        status.classList.remove('hidden');
+        this.reset(); // Limpia los campos del formulario
+      }
+    });
+  </script>
+</body>
+</html>

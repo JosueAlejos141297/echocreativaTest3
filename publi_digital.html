@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EchoCreativa - Publicidad Digital y Redes Sociales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="C:\Users\Josue\Documents\EchoPage3\icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body { font-family: 'Lato', sans-serif; }
+    .font-poppins { font-family: 'Poppins', sans-serif; }
+    .color-17afa1 { color: #17AFA1; }
+    .color-431a60 { color: #431A60; }
+    .color-796489 { color: #796489; }
+    .color-de1a80 { color: #DE1A80; }
+    .color-cccacd { color: #CCCACD; }
+    .bg-17afa1 { background-color: #17AFA1; }
+    .bg-431a60 { background-color: #431A60; }
+    .bg-796489 { background-color: #796489; }
+    .bg-de1a80 { background-color: #DE1A80; }
+    .bg-cccacd { background-color: #CCCACD; }
+
+    /* Animación del menú */
+    .nav-link-hover {
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .nav-link-hover:hover {
+        transform: translateY(-2px);
+        color: #DE1A80;
+    }
+    
+    /* Animación para las tarjetas de la cuadrícula (nueva) */
+    .sub-section-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .sub-section-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Animación para el botón de CTA (restaurada) */
+    .cta-button:hover {
+        background-color: #DE1A80; /* Cambia a color-de1a80 al pasar el mouse */
+        transition: background-color 0.3s ease;
+    }
+    /* Estilo para hacer el botón responsivo */
+    .responsive-cta {
+        display: block;
+        width: 100%;
+        max-width: 480px; /* Ancho máximo para centrarlo en escritorio */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <nav class="bg-431a60 text-white px-6 py-4 flex justify-between items-center relative">
+    <a href="index.html" class="flex items-center">
+      <img src="C:\Users\Josue\Documents\EchoPage3\logox.png" alt="Echo Creativa Logo" class="h-9">
+    </a>
+    <button id="menu-btn" class="lg:hidden block focus:outline-none text-2xl">☰</button>
+    <ul id="menu" class="hidden lg:flex space-x-6 font-semibold">
+      <li><a href="index.html" class="nav-link-hover">Inicio</a></li>
+      <li><a href="quienes.html" class="nav-link-hover">Quiénes Somos</a></li>
+      <li><a href="servicios.html" class="nav-link-hover">Servicios</a></li>
+      <li><a href="diferenciales.html" class="nav-link-hover">Diferenciales</a></li>
+      <li><a href="contacto.html" class="nav-link-hover">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="p-8 md:p-16 max-w-5xl mx-auto">
+    <h1 class="text-4xl font-poppins font-bold color-431a60 mb-4 text-center">
+      Publicidad Digital (Ads) y Redes Sociales
+    </h1>
+    <hr class="border-t-2 border-pink-500 w-20 mx-auto mb-8">
+
+    <h2 class="text-2xl font-poppins font-semibold color-17afa1 mb-4 text-center">
+      Impulsa Tu Marca: Crecimiento Sin Límites
+    </h2>
+    <p class="text-lg leading-relaxed mb-6 text-center">
+      Tener una presencia online es el primer paso. El crucial es asegurarte de que tu público objetivo te encuentre y conecte. Aquí es donde la **Publicidad Digital (Ads)** y una estrategia sólida de **Redes Sociales** se vuelven indispensables para PYMES y emprendedores que buscan visibilidad, interacción y resultados.
+    </p>
+
+    <div class="bg-white p-6 rounded-lg shadow-xl mb-10 border-l-4 border-color-de1a80">
+      <p class="font-poppins font-bold text-xl color-431a60 mb-3">Piensa en esto:</p>
+      <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+        <li>Tu marca aparece justo frente a los ojos de personas interesadas en tus productos o servicios, **en el momento preciso.**</li>
+        <li>Construyes una **comunidad leal** alrededor de tu negocio, transformando seguidores en clientes y embajadores.</li>
+        <li>Puedes **medir exactamente el impacto** de cada inversión y ajustar tus estrategias para maximizar el retorno.</li>
+      </ul>
+    </div>
+
+    <h2 class="text-2xl font-poppins font-semibold color-431a60 mb-6 text-center">
+      La Dupla Dinámica: Publicidad Digital y Redes Sociales
+    </h2>
+    <div class="grid md:grid-cols-2 gap-8 mb-10">
+
+      <div class="bg-white p-6 rounded-lg shadow-md sub-section-card border-t-4 border-bg-17afa1">
+        <div class="flex items-center space-x-3 mb-4">
+            <i class="fas fa-bullhorn color-de1a80 text-4xl"></i>
+            <h3 class="font-poppins font-bold text-xl color-431a60">1. Publicidad Digital (Ads)</h3>
+        </div>
+        <p class="text-sm color-796489 mb-4 italic">El Atajo Inteligente Hacia Tu Cliente Ideal</p>
+        <ul class="list-disc list-inside space-y-3 text-gray-700 ml-4 text-sm">
+          <li>
+            <strong class="font-semibold">Segmentación Precisa:</strong> Dirige tus anuncios por intereses, demografía y comportamientos (Google Ads, Meta Ads).
+          </li>
+          <li>
+            <strong class="font-semibold">Resultados Rápidos y Medibles:</strong> Obtén visibilidad instantánea y monitorea el rendimiento en tiempo real (clics, conversiones).
+          </li>
+          <li>
+            <strong class="font-semibold">Control de Presupuesto:</strong> Campañas escalables donde tú decides la inversión para un crecimiento acelerado.
+          </li>
+          <li>
+            <strong class="font-semibold">Mayor Visibilidad:</strong> Aparece en los primeros lugares de Google o en los feeds de redes sociales de tus potenciales clientes.
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md sub-section-card border-t-4 border-bg-17afa1">
+        <div class="flex items-center space-x-3 mb-4">
+            <i class="fas fa-users color-de1a80 text-4xl"></i>
+            <h3 class="font-poppins font-bold text-xl color-431a60">2. Redes Sociales</h3>
+        </div>
+        <p class="text-sm color-796489 mb-4 italic">Construye Comunidad, Confianza y Conexión Duradera</p>
+        <ul class="list-disc list-inside space-y-3 text-gray-700 ml-4 text-sm">
+          <li>
+            <strong class="font-semibold">Humanizar Tu Marca:</strong> Muestra la personalidad de tu negocio y construye relaciones genuinas.
+          </li>
+          <li>
+            <strong class="font-semibold">Fomentar la Lealtad:</strong> Mantén a tu audiencia comprometida con contenido relevante y atención al cliente ágil.
+          </li>
+          <li>
+            <strong class="font-semibold">Generar Tráfico y Leads:</strong> Dirige a tus seguidores a tu web o tienda online, transformando el interés en acciones concretas.
+          </li>
+          <li>
+            <strong class="font-semibold">Conocer a Tu Audiencia:</strong> El análisis de datos te ofrece información valiosa sobre las preferencias y necesidades de tus clientes.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-796489 text-white p-8 rounded-lg shadow-xl mb-10">
+      <h2 class="text-2xl font-poppins font-bold text-center mb-4">
+        Echo Creativa: Tu Estratega de Marketing Digital
+      </h2>
+      <p class="text-md leading-relaxed mb-6 text-center">
+        Manejar campañas de publicidad y redes sociales requiere tiempo y conocimiento. En Echo Creativa, con más de 3 años de experiencia, somos expertos en crear y ejecutar estrategias que conectan con tu audiencia y generan un impacto real.
+      </p>
+      <h3 class="font-poppins font-semibold text-xl color-de1a80 mb-3">Con nosotros, tu negocio se beneficiará de:</h3>
+      <ul class="list-disc list-outside space-y-3 ml-6">
+        <li>
+          <strong class="font-semibold color-de1a80">Estrategias Personalizadas:</strong> Desarrollamos planes a medida, alineados con tus objetivos comerciales y tu presupuesto.
+        </li>
+        <li>
+          <strong class="font-semibold color-de1a80">Gestión Profesional de Campañas (Ads):</strong> Optimizamos tus anuncios para obtener el máximo rendimiento, llegando a las personas correctas.
+        </li>
+        <li>
+          <strong class="font-semibold color-de1a80">Contenido Atractivo y de Valor:</strong> Creamos publicaciones creativas, relevantes y optimizadas para cada plataforma.
+        </li>
+        <li>
+          <strong class="font-semibold color-de1a80">Análisis y Reportes Claros:</strong> Te proporcionamos informes detallados para la mejora continua y el retorno de inversión.
+        </li>
+      </ul>
+    </div>
+
+    <p class="text-lg leading-relaxed mb-8 text-center font-semibold color-431a60">
+      ¿Listo para que tu marca no solo exista, sino que resuene y conquiste el mercado digital?
+      <br><em class="color-de1a80">¡Permite que Echo Creativa amplifique tu mensaje y atraiga a los clientes que tu negocio merece!</em>
+    </p>
+
+    <div class="text-center mt-12">
+      <h3 class="text-xl font-poppins font-bold color-431a60 mb-4">¡Impulsa tu marca hoy!</h3>
+      <a href="contacto.html" class="bg-431a60 text-white px-8 py-4 rounded-full font-semibold transition shadow-lg text-lg cta-button responsive-cta">Contacta a nuestros especialistas en Marketing Digital</a>
+    </div>
+
+  </section>
+
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      menu.classList.toggle("flex");
+      menu.classList.toggle("flex-col");
+      menu.classList.toggle("absolute");
+      menu.classList.toggle("bg-431a60");
+      menu.classList.toggle("top-16");
+      menu.classList.toggle("left-0");
+      menu.classList.toggle("w-full");
+      menu.classList.toggle("space-y-4");
+      menu.classList.toggle("p-6");
+    });
+  </script>
+</body>
+</html>
